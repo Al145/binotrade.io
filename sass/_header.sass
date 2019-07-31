@@ -1,0 +1,122 @@
+.header
+    width: 100%
+    height: 900px
+    background: url('../img/header.jpg') no-repeat
+    background-size: cover
+    &__navbar
+        font-size: 15px
+        display: flex
+        color: #fff
+        align-items: center
+        min-height: 70px
+    &__navbar .logo img
+        margin-left: 52px
+        margin-right: 10px
+    &__navbar .logo img:hover
+        animation: jackInTheBox 1s 
+    &__navbar button 
+        margin-left: 40px
+        background: Transparent
+        border: 1px solid #FFFFFF
+        border-radius: 4px
+        color: white
+        padding: 7px 30px
+        cursor: pointer
+        text-align: center
+        text-decoration: none
+        transition: .3s linear
+    &__navbar .lang 
+        display: inline-block
+        line-height: 1
+        text-decoration:none
+        cursor: pointer
+        position: relative
+        text-transform: uppercase
+        text-decoration: none
+        color: #fff
+        margin-left: 10px
+        transition: .3s ease-in-out
+    &__navbar .lang:after
+        background-color: #BFEFFF
+        display: block
+        content: ""
+        height: 2px
+        width: 0%
+        left: 50%
+        position: relative
+        transition: width .3s ease-in-out
+        transform: translateX(-50%)
+    
+    &__navbar .lang:hover:after,
+    &__navbar .lang:focus:after 
+        width: 100%
+    &__navbar .lang:hover
+        color: #BFEFFF
+    &__navbar .nav 
+        display: inline-block
+        line-height: 1
+        text-decoration: none
+        cursor: pointer
+        position: relative
+        text-decoration: none
+        color: #fff
+        margin-left: 10px
+        transition: .3s ease-in-out
+    &__navbar .nav:after
+        background-color: #BFEFFF
+        display: block
+        content: ""
+        height: 2px
+        width: 0%
+        left: 50%
+        position: relative
+        transition: width .3s ease-in-out
+        transform: translateX(-50%)
+        top: 2px
+    &__navbar .nav:hover:after,
+    &__navbar .nav:focus:after 
+        width: 100%
+    &__navbar .nav:hover
+        color: #BFEFFF
+    &__navbar button:hover
+        background: #fff
+        color: #22a4fc
+    &__navbar li
+        list-style: none
+    &__navbar ul 
+        display: flex
+        width: 79%
+        justify-content: flex-end
+        align-items: center
+    &__navbar .nav 
+        margin-left: 35px
+        text-decoration: none
+        color: #fff
+    &__navbar .divider
+        border-right: 1px solid #fff
+        height: 20px
+        opacity: .2
+    &__navbar .divider_2
+        border-right: 1px solid #fff
+        height: 28px
+        opacity: .3
+        margin-left: 25px
+        margin-right: -10px
+
+@keyframes jackInTheBox 
+  from 
+    opacity: 0
+    -webkit-transform: scale(0.1) rotate(30deg)
+    transform: scale(0.1) rotate(30deg)
+    -webkit-transform-origin: center bottom
+    transform-origin: center bottom
+  50% 
+    -webkit-transform: rotate(-10deg)
+    transform: rotate(-10deg)
+  70% 
+    -webkit-transform: rotate(3deg)
+    transform: rotate(3deg)
+  to 
+    opacity: 1
+    -webkit-transform: scale(1)
+    transform: scale(1)
